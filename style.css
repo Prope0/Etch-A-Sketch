@@ -1,0 +1,30 @@
+* {
+  background: rgb(209, 209, 209);
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  display: grid;
+  grid-gap: 0em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  max-width: 960px;
+  max-height: 960px;
+  padding: 20px;
+}
+
+.grid-item {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 0.7em;
+}
